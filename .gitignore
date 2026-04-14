@@ -34,7 +34,7 @@ logs/
 *.secret
 
 ### --- Docs ---
-Docs/Logins
+Logins
 
 #
 # The End
