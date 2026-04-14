@@ -1,0 +1,115 @@
+---
+##################################
+#                                #
+#        Hipervisor KVM          #
+#                                #
+#         HERMES 001-A          #
+#              by                #
+#     Vollnet Smart Business     #
+#             @2026              #
+##################################
+
+# vagrant.yml Vs. 0.0.1-A - 2026/04/10 - Hipervisor KVM
+
+#####################
+#     Alter        #
+#####################
+# https://portal.cloud.hashicorp.com/vagrant/discover
+# 
+# https://portal.cloud.hashicorp.com/vagrant/discover/generic/ubuntu2204
+#
+type_vbox:      "generic/ubuntu2204" # aka Jammy Jellyfish
+type_version:   "4.3.12"             # Created 16 de jan. de 2024
+
+#
+# VBox IP ADDRESS
+#
+# KVM - Rede Virtual
+#
+#   Range IPV4 Host: "192.168.56.0/24" 
+#          IP-Range: "192.168.56.2" a "192.168.56.254"
+#
+####################
+#     Alter        #
+####################
+ip_address:     "192.168.56.50"
+
+# sync folders
+#
+sync_work:      "./vm_host"
+sync_guest:     "/home/vagrant/vm_work" 
+
+#
+# hardware custumization
+#
+# Memory
+#
+####################
+#     Alter        #
+####################
+vm_memory:      "2048"
+
+# vCPU
+#
+####################
+#     Alter        #
+####################
+vm_cpus:        "2"
+
+# Project Name
+#
+####################
+#     Alter        #
+####################
+# app_name:       "voll_00"
+
+# Vbox User Name: developer, tester, operation, ... , others
+#
+####################
+#     Alter        #
+####################
+vm_hostname:    "vollnet"
+
+# Vagrant box Name:
+#
+####################
+#     Alter        #
+####################
+vm_name:        "vm-kvm" 
+
+####################
+#  vagrant user    #
+####################
+vagrant_user:   "vagrant"
+vagrant_pw:     "vagrant"
+
+#################################
+#  Project Fases:               #
+#################################
+# 00 SKETCH: ............... SKE
+# 01 DEVELOPMENT: .......... DEV
+# 02 TESTING: .............. TES
+# 03 RELEASE: .............. REL
+# 04 PRE-PRODUCTION: ....... PRE
+# 05 HOMOLOGATION: ......... HOM
+# 06 PRODUCTION: ........... PRO
+# 07 MAINTENANCE: .......... MAN
+# 08 MINIMUM VIABLE PRODUCT: MVP
+# 09 ARCHIVED: ............. ARC
+#################################
+fase_project: 'SKE'
+
+# Ansible Path
+#
+####################
+#     Alter        #
+####################
+ansible_path: "/home/vollnet/vms-vollnet/project_00/provision/tasks/main.yml"
+
+####################
+#     Fixed        #
+####################
+network_device: "virbr0"
+model_type:     "virtio"
+
+...

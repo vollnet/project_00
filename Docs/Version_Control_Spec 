@@ -1,0 +1,17 @@
+# Version Control Spec Application 
+#
+#           beta (Funcionalidade estável)   
+#            | 
+# Vs 0.0.0 A/B/RC - Release Candidate
+#    | | | |
+#    | | | alpha (Funcionalidade instável) 
+#    | | |
+#    | | Revision Patch (correções de bugs e otimizações sem alterar funcionalidades)
+#    | |
+#    | Structure Modify (Add new functions, removed functions, Chanched functions)
+#    |
+#    Release: 
+#               0: Tester (Desenvolvimento)
+#               1: Pré-Produção (staging: Homologação)                
+#            >= 2: Produção (public-cloud, on-premises)
+# 

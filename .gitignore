@@ -1,0 +1,38 @@
+### --- IDEs e Editores de Texto ---
+# VS Code
+.vscode/
+!.vscode/extensions.json
+*.code-workspace
+
+### --- Ambientes Virtuais e Máquinas Virtuais ---
+# Vagrant
+.vagrant/
+
+# Docker
+.docker/
+
+# Python VirtualEnvs
+venv/
+.venv/
+env/
+__pycache__/
+
+# Node.js
+node_modules/
+
+### --- Logs e Temporários ---
+*.log
+logs/
+*.tmp
+*.temp
+
+### --- Segurança e Configurações Locais ---
+# Nunca suba arquivos de credenciais ou variáveis de ambiente
+.env
+.env.local
+.env.*.local
+*.secret
+
+#
+# The End
+#
