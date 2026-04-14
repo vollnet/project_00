@@ -33,6 +33,9 @@ logs/
 .env.*.local
 *.secret
 
+### --- Docs
+Docs/Logins
+
 #
 # The End
 #
