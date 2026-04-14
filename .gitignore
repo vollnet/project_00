@@ -33,7 +33,7 @@ logs/
 .env.*.local
 *.secret
 
-### --- Docs
+### --- Docs ---
 Docs/Logins
 
 #
